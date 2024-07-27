@@ -2,7 +2,6 @@
 vim.o.number = true
 vim.o.relativenumber = true
 
-vim.o.noswapfile = true
 -- Search settings
 vim.o.hlsearch = false -- Turn off search highlights
 vim.o.ignorecase = true
