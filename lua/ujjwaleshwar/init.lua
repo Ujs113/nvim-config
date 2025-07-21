@@ -5,8 +5,9 @@ vim.g.loaded_netrwPlugin = 1
 -- require("ujjwaleshwar.dein-init")
 require("ujjwaleshwar.lazy")
 -- Set options for the Nord theme
-vim.g.nord_contrast = true
-vim.g.nord_borders = true
+-- vim.g.nord_contrast = true
+-- vim.g.nord_borders = true
 -- Enable the Nord theme
-require('nord').set()
+-- require('nord').set()
+vim.cmd.colorscheme "catppuccin-mocha"
 require("ujjwaleshwar.settings")

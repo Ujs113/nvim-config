@@ -4,3 +4,12 @@ vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fs', function()
     builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fc', builtin.colorscheme, { desc = 'Telescopt select colour scheme' })
+vim.keymap.set('n', '<leader>fr', builtin.lsp_references, { desc = 'Telescope list lsp references' })
+vim.keymap.set('n', '<leader>fri', builtin.lsp_incoming_calls, { desc = 'List incoming calls using lsp' })
+vim.keymap.set('n', '<leader>fro', builtin.lsp_outgoing_calls, { desc = 'List outgoing calls using lsp' })
+vim.keymap.set('n', '<leader>fgi', builtin.lsp_implementations, { desc = 'List implementations using lsp' })
+vim.keymap.set('n', '<leader>fgd', builtin.lsp_definitions, { desc = 'List definitions using lsp' })
+
